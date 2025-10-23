@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Placement</string>
+
+    <!-- own strings -->
+    <string name="isotipo_description">isotipo</string>
+    <string name="primer_parrafo">Hello Android!</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="singup">SINGUP</string>
 </resources>
