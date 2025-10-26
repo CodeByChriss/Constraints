@@ -15,14 +15,15 @@
         android:src="@drawable/ic_action_name"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/isotipo_description"/>
 
     <TextView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Hello Android!"
+        android:text="@string/primer_parrafo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/isotipo"/>
@@ -31,8 +32,10 @@
         android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:minHeight="48dp"
         android:inputType="text"
-        android:hint="Name"
+        android:hint="@string/name"
+        android:autofillHints="name"
         android:textSize="12sp"
         android:layout_marginTop="48dp"
         app:layout_constraintTop_toBottomOf="@id/logo"
@@ -44,8 +47,10 @@
         android:id="@+id/password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:minHeight="48dp"
         android:inputType="textPassword"
-        android:hint="Password"
+        android:hint="@string/password"
+        android:autofillHints="password"
         android:textSize="12sp"
         app:layout_constraintTop_toBottomOf="@id/name"
         app:layout_constraintStart_toStartOf="@id/guideline1"
@@ -57,24 +62,25 @@
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="10sp"
-        android:layout_margin="2dp"
+        android:textSize="12sp"
+        android:layout_margin="8dp"
         app:layout_constraintTop_toBottomOf="@id/password"
         app:layout_constraintStart_toStartOf="@id/guideline1"
-        app:layout_constraintEnd_toEndOf="@id/guideline2"
-        android:text="LOGIN"/>
+        app:layout_constraintEnd_toStartOf="@id/btn2"
+        android:text="@string/login"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
 
     <Button
         android:id="@+id/btn2"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="2dp"
-        android:textSize="10sp"
-        app:layout_constraintTop_toBottomOf="@id/btn1"
-        app:layout_constraintStart_toStartOf="@id/guideline1"
+        android:layout_margin="8dp"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintStart_toEndOf="@id/btn1"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
-        android:text="SINGUP"/>
+        android:text="@string/singup"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
