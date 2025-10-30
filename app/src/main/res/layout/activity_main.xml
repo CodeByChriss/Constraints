@@ -79,6 +79,54 @@
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         android:text="@string/singup"/>
 
+    <TextView
+        android:id="@+id/tvCrearNuevaCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear una nueva cuenta"
+        app:layout_constraintTop_toBottomOf="@id/btn2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        android:layout_marginVertical="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/link"/>
+
+    <TextView
+        android:id="@+id/tvPoliticaPrivacidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="privacidad"
+        app:layout_constraintTop_toBottomOf="@id/tvCrearNuevaCuenta"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintEnd_toStartOf="@id/tvPoliticasDivider"
+        android:layout_marginVertical="128dp"
+        android:textSize="12sp"
+        android:textColor="@color/link"/>
+
+    <TextView
+        android:id="@+id/tvPoliticasDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintTop_toBottomOf="@id/tvCrearNuevaCuenta"
+        app:layout_constraintStart_toEndOf="@id/tvPoliticaPrivacidad"
+        app:layout_constraintEnd_toStartOf="@id/tvCondiciones"
+        android:layout_marginVertical="128dp"
+        android:textSize="12sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvCondiciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="condiciones"
+        app:layout_constraintTop_toBottomOf="@id/tvCrearNuevaCuenta"
+        app:layout_constraintStart_toEndOf="@id/tvPoliticasDivider"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        android:layout_marginVertical="128dp"
+        android:textSize="12sp"
+        android:textColor="@color/link"/>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
         android:layout_width="wrap_content"
